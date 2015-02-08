@@ -19,12 +19,9 @@ public class ReadFromFile {
     
     public ReadFromFile(String filename) throws FileNotFoundException
     {
-      //  char US;
-    //    US = 0x1F;
-//String s = "hello" + record_separator + "world"
-    
+
     digiDriverText = new Scanner(new File(filename)).useDelimiter("\\Z").next();
-  // digiDriverText = digiDriverText.replace(Character.toString(US),"$");
+ 
     }
 
     /**
